@@ -1,0 +1,19 @@
+CompileFlags:
+        Add: [-std=c++20, -Wall]
+        Compiler: g++
+
+Index:
+        Background: Build
+
+Diagnostics:
+        ClangTidy:
+                Add:
+                - 'bugprone-*'
+                - 'cppcoreguidelines-*'
+                - 'modernize-*'
+                - 'readability-*'
+
+InlayHints:
+        Enabled: Yes
+        ParameterNames: Yes
+        DeducedTypes: Yes
